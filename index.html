@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hall Ticket</title>
+</head>
+<style>
+    button {
+        margin-left: 9.5rem;
+    }
+</style>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
+    integrity="sha256-c9vxcXyAG4paArQG3xk6DjyW/9aHxai2ef9RpMWO44A=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
+
+    <div id="content2" style="background: #fff;border-bottom: 1px solid #ffffff;">
+        <div class="tokenDet" style="padding: 15px;border: 1px solid #000;width: 80%;margin: 0 auto;position: relative;overflow: hidden;">
+
+            <div class="title" style="text-align: center; color: green; border-bottom: 1px solid #000;margin-bottom: 15px;">
+                <h2>Entrance Exam Hall Ticket</h2>
+            </div>
+            <div class="parentdiv" style="display: inline-block;width: 100%;position: relative;">
+                <div class="innerdiv" style="width: 80%;float: left;">
+                    <div class="restDet">
+                        <div class="div">
+                            <div class="label" style="width: 30%;float: left;">
+                                <strong>Name</strong>
+                            </div>
+                            <div class="data" style="width: 70%;display: inline-block;">
+                                <span>Megha Pradhan</span>
+                            </div>
+                            <div class="label" style="width: 30%;float: left;">
+                                <strong>D.O.B.</strong>
+                            </div>
+                            <div class="data" style="width: 70%;display: inline-block;">
+                                <span>9th April, 1998</span>
+                            </div>
+                            <div class="label" style="width: 30%;float: left;">
+                                <strong>Address</strong>
+                            </div>
+                            <div class="data" style="width: 70%;display: inline-block; color: blue">
+                                <span>Subhash Chowk, Gileshan Bazar, Surat Ganj, Ward No-15, Madhubani, Bihar - 847211</span>
+                            </div>
+                            <div class="label" style="width: 30%;float: left;">
+                                <strong>Contact Number</strong>
+                            </div>
+                            <div class="data" style="width: 70%;display: inline-block;">
+                                <span>1234567890</span>
+                            </div>
+                            <div class="label" style="width: 30%;float: left;">
+                                <strong>Email Id</strong>
+                            </div>
+                            <div class="data" style="width: 70%;display: inline-block;">
+                                <span>test@test.com</span>
+                            </div>
+                            <div class="label" style="width: 30%;float: left;">
+                                <strong>Parent(s) Name</strong>
+                            </div>
+                            <div class="data" style="width: 70%;display: inline-block;">
+                                <span>S. Test</span><br /><span>7896541230</span>
+                            </div>
+                            <div class="label" style="width: 30%;float: left;">
+                                <strong>Exam Center</strong>
+                            </div>
+                            <div class="data" style="width: 70%;display: inline-block;">
+                                <span>Institute of Engineering & Management</span>
+                            </div>
+                            <div class="label" style="width: 30%;float: left;">
+                                <strong>Center Code</strong>
+                            </div>
+                            <div class="data" style="width: 70%;display: inline-block;">
+                                <span>81521</span>
+                            </div>
+                            <div class="label" style="width: 30%;float: left;">
+                                <strong>Hall Number</strong>
+                            </div>
+                            <div class="data" style="width: 70%;display: inline-block;">
+                                <span>COM-32</span>
+                            </div>
+                            <div class="label" style="width: 30%;float: left;">
+                                <strong>Registration Number</strong>
+                            </div>
+                            <div class="data" style="width: 70%;display: inline-block;">
+                                <span>DT202018694</span>
+                            </div>
+                            <div class="label" style="width: 30%;float: left;">
+                                <strong>Date Of Exam</strong>
+                            </div>
+                            <div class="data" style="width: 70%;display: inline-block;">
+                                <span>18 July 2021(Sunday)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sideDiv" style="width: 20%;float: left;">
+                    <div class="atts" style="float: left;width: 100%;">
+                        <div class="photo" style="width: 130px;height: 150px;float: right; border: 1px solid black;">
+                            <img src="passport size photo.png"
+                            style="width: 100%;height: 100%;">
+                        </div>
+                        <div class="sign"
+                            style="position: absolute;bottom: 0;right: 0;border-top: 1px dashed #000;left: 80%;text-align: right;">
+                            <small>Self Attested</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary" id="downloadPDF">Download PDF</button>
+    <script src="pdf.js"></script>
+</body>
+</html>
